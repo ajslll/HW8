@@ -1,0 +1,9 @@
+first = 0
+second = 1
+count = int(input('Введите номер елемента последовательности Фибоначчи: '))
+b = 0
+while b <= count - 1:
+    print(first, end=' ')
+    sum = first + second
+    first, second = second, sum
+    b += 1
